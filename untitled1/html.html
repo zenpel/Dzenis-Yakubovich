@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клон Netflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="background"></div>
+<header>
+    <div class="search">
+        <form>
+            <label>
+                <input type="text" placeholder="search">
+            </label>
+            <button type="submit"></button>
+        </form>
+        <div id="searchResults">
+            <!-- Здесь будут отображаться результаты поиска -->
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="images/netflix_logo.png" alt="Логотип Netflix">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Strona Główna</a></li>
+            <li><a href="#">Seriale i programy</a></li>
+            <li><a href="#">Filmy</a></li>
+            <li><a href="#">Nowe i popularne</a></li>
+            <li><a href="#">Moja lista</a></li>
+            <li><a href="#">Przeglądaj wg języka</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="featured">
+        <div class="featured-info">
+            <p>Do organów ścigania, to nie jest przyznanie się do winy.</p>
+            <button>Odtwórz</button>
+            <button>Węcej informacji</button>
+        </div>
+    </div>
+    <div class="recommendations">
+        <h2>To też warto zobaczyć</h2>
+        <div class="recommended-list">
+            <div class="item"><img src="images/house.jpg" alt="DR._House"></div>
+            <div class="item"><img src="images/three_body_problem.jpg" alt="Three_body_problem"></div>
+            <div class="item"><img src="images/bridgerton.jpg" alt="Bridgerton"></div>
+            <div class="item"><img src="images/swiry.jpg" alt="Świry"></div>
+            <div class="item"><img src="images/arcane.jpg" alt="Arcane"></div>
+            <div class="item"><img src="images/samurai.jpg" alt="Samurai"></div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

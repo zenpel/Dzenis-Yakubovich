@@ -1,0 +1,159 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden; /* Чтобы избежать горизонтальной прокрутки */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/breaking_bad.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* чтобы фон оставался позади других элементов */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+    position: relative;
+    z-index: 1; /* чтобы header был выше background */
+}
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured {
+    position: relative;
+    text-align: left;
+    padding: 400px 20px 20px 20px;
+    z-index: 1; /* чтобы featured был выше background */
+}
+
+.featured-info {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для текста */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.featured-info h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.featured-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.featured-info button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.featured-info button:first-child {
+    background-color: #e50914;
+    color: white;
+}
+
+.featured-info button:last-child {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.recommendations {
+    padding: 20px;
+}
+
+.recommendations h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recommended-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+.recommended-list .item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.recommended-list .item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+* {box-sizing: border-box;}
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+}
+input {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #f8f8f8;
+}
+.search button {
+    background: #ffffff;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 0;
+    color: #ffffff;
+}
